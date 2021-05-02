@@ -37,3 +37,4 @@ create table if not exists collection_album_track(
 	id serial primary key,
 	collection_id integer not null references collection_List(id),
 	album_id integer not null references album_List(id);
+	track_id integer not null references Track_List(id));
